@@ -1,16 +1,16 @@
 %define upstream_name    txt2html
 %define module_name      HTML-TextToHTML
-%define upstream_version 2.51
+%define upstream_version 2.5201
 
 Name:		perl-%{module_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	2
+Version:	%perl_convert_version 2.5201
+Release:	1
 
 Summary:	Convert plain text file to HTML
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/HTML/%{upstream_name}-%{upstream_version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/HTML/txt2html-2.5201.tar.gz
 
 BuildRequires:	perl-devel
 
@@ -47,4 +47,5 @@ perl Makefile.PL INSTALLDIRS=vendor
 * Tue Jul 14 2009 Anssi Hannula <anssi@mandriva.org> 2.510.0-1mdv2010.0
 + Revision: 395994
 - initial Mandriva release
+
 
