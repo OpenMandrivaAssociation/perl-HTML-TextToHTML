@@ -3,14 +3,14 @@
 %define upstream_version 2.5201
 
 Name:		perl-%{module_name}
-Version:	%perl_convert_version 2.5201
+Version:	%perl_convert_version %{upstream_version}
 Release:	1
 
 Summary:	Convert plain text file to HTML
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/HTML/txt2html-2.5201.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/HTML/txt2html-%{upstream_version}.tar.gz
 
 BuildRequires:	perl-devel
 
