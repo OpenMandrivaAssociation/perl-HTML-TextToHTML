@@ -1,16 +1,14 @@
 %define upstream_name    txt2html
 %define module_name      HTML-TextToHTML
-%define upstream_version 2.5201
-
 Name:		perl-%{module_name}
-Version:	%{upstream_version}
-Release:	4
+Version:	2.5201
+Release:	5
 
 Summary:	Convert plain text file to HTML
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		https://metacpan.org/dist/txt2html
-Source0:	https://cpan.metacpan.org/authors/id/R/RU/RUBYKAT/txt2html-%{upstream_version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/R/RU/RUBYKAT/txt2html-%{version}.tar.gz
 
 BuildRequires:	perl-devel
 BuildRequires: perl(Module::Build)
@@ -28,7 +26,7 @@ HTML::TextToHTML converts plain text files to HTML. The txt2html
 script uses this module to do the same from the command-line.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 perl Build.PL installdirs=vendor
